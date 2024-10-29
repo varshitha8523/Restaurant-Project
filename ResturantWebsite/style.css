@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
+}
+/* Buttons Style */
+.button{
+    border: none;
+    background: #0067ac;
+    padding: 0.8rem;
+    border-radius: 30px;
+    width: 55%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2vh 0;
+    
+}
+.padding2{
+    padding: 2rem;
+}
+
+.heading3{
+    color: #666666;
+    font-size: 2.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+header h1 span{
+    color:#0067ac;
+    margin: 2vh 0;
+}
+header .sub-menu{
+display: flex;
+width:100%;
+justify-content: space-around;
+flex-direction: column;
+align-items: center;
+}
+header .sub-menu img{
+    height: 1rem;
+}
+header .sub-menu span{
+    margin-top: 2vh;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 2vh;
+}
+/* SECTION ONE CSS*/
+
+.one .left h1{
+    color: #666666;
+    font-size: 2.2rem;
+}
+.one .left h3{
+font-weight: 350;
+font-size: 1rem;
+}
+ .one .left .feature{
+display: flex;
+width: 100%;
+align-items: center;
+margin: 2vh 0;
+ }
+ .one .left .feature img{
+    height: 2rem;
+ }
+ .one .left .feature p{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+ }
+ .one .right{
+    position: relative;
+ }
+ .one .right img {
+    width: 100%;
+    height: auto;
+
+ }
+ .one .right .background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+ }
+ .two .left img{
+    height: 35vh;
+    width: 105%;
+
+ }
+ .two .right{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+ }
+ 
+ /* Section Three */
+ .three{
+    text-align: center;
+    margin-top: 18vh;
+ }
+ 
+
+ .three .offers .offer img {
+    height: auto;
+    width: 20%;
+    margin: auto;
+
+ }
+
+.three .offers .offer{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.three .offers .offer{
+    font-size: 1rem;
+}
+/* section four css */
+.four{
+    text-align: center;
+}
+.four .foods .food:hover{
+    background: #0067ac;
+    color: white;
+}
+.four .foods .food button:hover{
+
+    background: white;
+    color: black;
+    outline: none;
+} 
+.four .foods .food{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+align-items: center;
+margin: 1rem 0;
+border: 1px solid #666666;
+border-radius: 16px;
+padding: 0.8rem;
+
+}
+.four .foods .food img{
+    width: 30%;
+    height:5rem;
+
+}
+
+.four .foods .food button{
+width: 50%;
+}
+.four .foods .food span{
+    color: tomato;
+}
+
+.four .foods .food .price{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4vh;
+}
+/* section five */
+footer{
+    margin-top:0.2vh;
+    height: 60vh;
+}
+
+footer .special-offer{
+    padding: 2rem;
+    text-align: center;
+
+}
+footer .special-offer h4{
+    font-size: 1.6rem;
+}
+footer .special-offer .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .special-offer .input input{
+    padding: 0.8rem;
+    margin-top: 3vh;
+    width: 80%;
+     border-radius: 30px;
+     border: 1px solid #666666;
+}
+
+
+footer .details{
+    background: linear-gradient(to bottom, #BBDEFB,#0067ac);
+    text-align: center;
+}
+footer .detail h1{
+    padding-top: 3vh;
+}
+footer .details .detail {
+    margin: 2vh 0;
+}
+footer .details .detail h4{
+    color: white;
+}
+footer .details .boxes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+footer .details .detail ul{
+    list-style: none;
+}
+footer .details .detail img{
+    height: 2rem;
+}
+/* Media Queries Section */
+@media screen and (min-width:700px){
+    header .sub-menu{
+        display: flex;
+        flex-direction: row;
+    }
+    .one .left h1{
+        font-size: 3rem;
+        animation-duration: 1s;
+    }
+    .one .left h3{
+        font-size: 1.2rem;
+        width: 70%;
+        line-height: 2rem;
+
+    }
+
+    .one .left .button{
+        width: 250px;
+        margin: 4vh 0;
+    }
+    .one .left .features{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .one .right .foreground{
+        max-width: 70%;
+        margin-left: 20%;
+        margin-top: 2%;
+    }
+
+    .two .left .foreground{
+        max-width: 90%;
+        
+    }
+    .three {
+background: url(assets/pg3-bg.png);
+background-size: contain;
+background-repeat: no-repeat;
+height: 60vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 1vh;
+
+    }
+    .three .offers{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        margin: 7vh 0;
+    }
+    .four .foods{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    footer .details .boxes{
+        grid-template-columns:repeat(4,1fr) ;
+    }
+}
+
+/* Laptops and Other Devices */
+@media  screen and (min-width:1200px){
+    header{
+display: flex;
+flex-direction: row;
+width: 52%;
+height: 12vh;
+align-items: center;
+margin-left: 2rem;
+    }
+    .one {
+        display: grid;
+        grid-template-columns: 35% auto;
+        position: relative;
+    }
+    .one .left .features{
+        display: grid;
+        grid-template-columns: repeat(3,1.5fr);
+        position: absolute;
+        width: 55%;
+        margin-top: 0;
+        
+
+    }
+    .one .right .background{
+        position: absolute;
+        top: -35%;
+        height: 130vh;
+        width: 40rem;
+
+    }
+    .two .left .foreground{
+        margin-top: 1rem;
+    }
+    .two {
+        display: grid;
+        grid-template-columns: 45% auto;
+        height: 100vh;
+        align-items: center;
+    }
+    .two .right{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.3rem;
+     }
+     .three {
+        height: 100vh;
+        background-size: cover;
+        margin-top: 1.8rem;
+     }
+     .three .offers{
+        width: 70%;
+        margin: 6vh auto;
+     }
+     .four{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height:100vh;
+     }
+     .four .all-button{
+        width: 30%;
+        align-self:center ;
+         
+     }
+    .four .foods{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    footer{
+        position:relative;
+        display: grid;
+        margin-top: 20vh;
+    }
+    footer .special-offer{
+        width: 75%;
+        margin: auto;
+        border: 1px solid #666666;
+        border-radius: 50px;
+        position: absolute;
+        top: -30%;
+        justify-self: center;
+        background: white;
+        background-image: url('./assets/pg3-bg.png');
+        background-size: cover;
+    }
+    footer .special-offer .input{
+        display: flex;
+        flex-direction: row;
+        width:60%;
+        align-items: center;
+        margin: auto;
+    }
+    footer .special-offer .input input{
+        border: none;
+
+    }
+    footer .details{
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+    }
+    
+}
